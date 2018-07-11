@@ -1,664 +1,91 @@
 <!-- 01. hero_area -->
-    <div class="hero_area" id="welcome">
-        <div class="sticky-anchor"></div>
-        <header class="header-area fixed_header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-xs-4">
-                        <a href="#" class="logo">
-                            <img src="img/logo.jpg" alt="">
-                            <!-- if you want to add text logo just use
-                                <span>YOUR_LOGO_TEXT</span>
-                            -->
-                        </a>
-                    </div>
-                    <div class="col-md-9 col-xs-8">
-                        <nav>
-                            <ul class="menu hidden-xs hidden-sm">
-                                <li class="current-menu-item"><a href="#welcome">Welcome</a></li>
-                                <li><a href="#">Versions</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html">One Creative - App</a></li>
-                                        <li><a href="index-mailchimp.html">One MailChimp - Product</a></li>
-                                        <li><a href="index-video.html">One Video - All</a></li>
-                                        <li><a href=""><del>Coming Soon</del></a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#feature">Features</a></li>
-                                <li><a href="#testimonial">Testimonials</a></li>
-                                <li><a href="#">Dropdown</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Submenu-1</a></li>
-                                        <li><a href="#">Submenu-2</a></li>
-                                        <li><a href="#">Submenu-3</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Submenu-1</a></li>
-                                                <li><a href="#">Submenu-2</a></li>
-                                                <li><a href="#">Submenu-3</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="#">Submenu-1</a></li>
-                                                        <li><a href="#">Submenu-2</a></li>
-                                                        <li><a href="#">Submenu-3</a></li>
-                                                        <li><a href="#">Submenu-4</a></li>
-                                                        <li><a href="#">Submenu-5</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Submenu-4</a></li>
-                                                <li><a href="#">Submenu-5</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Submenu-4</a></li>
-                                        <li><a href="#">Submenu-5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-full-width.html">Blog Full Width</a></li>
-                                        <li><a href="blog-one-column.html">Blog One Column</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="single-blog.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#"  data-toggle="modal" data-target=".bs-example-modal-sm">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="home_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 home_col">
-                       <div class="home_content animated a_fl">
-                            <div class="h1">The best <br>landing page <br>for your app or <br>digital product.</div>
-                            <div class="h3">Showcase your app or digital product to your customers with a very creative way.</div>
-                            <div class="home_btn">
-                                <a href="#" class="home_btn default-btn hvr-shutter-out-horizontal">Discover more &nbsp;<i class="icofont icofont-long-arrow-right"></i></a>
-                            </div>
-                       </div>
-                    </div>
-                    <div class="col-md-6 home_col">
-                        <div class="home_img relative text-right">
-                            <img class="animated a_fr" data-delay=".5s" src="img/01.png" alt="">
+<div class="hero_area" id="welcome">
+    <div class="sticky-anchor"></div>
+    
+    {{> header }}
 
-                            <!-- NB: if you area a wordpress developer, just remove this 2nd image. this image used for extra animation effect -->
-                            <img src="img/01.1.png" data-duration="1s" class="absolute r0 t0 animated a_fr" alt="">
-                        </div>
-                        <div class="round_animate_wrap">
-                            <div class="round_animate">
-                                <div class="shape_1">
-                                    <span class="r_1"></span>
-                                    <span class="r_2"></span>
-                                    <span class="r_3"></span>
-                                    <span class="r_4"></span>
-                                </div>
-                                <div class="shape_2">
-                                    <span class="r_1"></span>
-                                    <span class="r_2"></span>
-                                    <span class="r_3"></span>
-                                    <span class="r_4"></span>
-                                </div>
-                                <div class="shape_3">
-                                    <span class="r_1"></span>
-                                    <span class="r_2"></span>
-                                    <span class="r_3"></span>
-                                    <span class="r_4"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 01. /hero_area -->
-
-    <!-- 02. feature_area -->
-    <div class="feature_area sp100 animated a_fu" id="feature">
+    <div class="home_area">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="section_title animated a_fu">
-                        <div class="h1">You’ll be happy to see <br>our awesome features.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row features">
-                <div class="col-md-4">
-                    <div class="feature_dsc animated a_fu">
-                        <div class="clearfix">
-                            <span>NEW:</span> <h4>We have added new feature <br>to our device.</h4>
-                        </div>
-                        <div class="feature_txt">
-                            <p>Attended no do thoughts me on dissuade  scarcely. Own are pretty spring suffer old demo his. By proposal speedily mr striking am. But  attention six questions applauded how  happiness. To travelling occasional at oh  sympathize prosperous.</p>
-                        </div>
-                        <a href="#" class="read_me">Show me more <i class="icofont icofont-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature_img animated a_fu">
-                        <img src="img/02.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 animated a_fu">
-                    <div class="single_feature">
-                        <div class="sf_inner">
-                            <h4>Well Planed UX Design</h4>
-                            <p>Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions.</p>
-                        </div>
-                    </div>
-                    <div class="single_feature">
-                        <div class="sf_inner">
-                            <h4>Creative & Minimal Layout</h4>
-                            <p>Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions.</p>
-                        </div>
-                    </div>
-                    <div class="single_feature">
-                        <div class="sf_inner">
-                            <h4>Fastest in Speed</h4>
-                            <p>Acceptance middletons me if discretion boisterous travelling an. She prosperous continuing entreaties companions.</p>
+                <div class="col-md-6 home_col">
+                    <div class="home_content animated a_fl">
+                        <div class="h1">The best <br>landing page <br>for your app or <br>digital product.</div>
+                        <div class="h3">Showcase your app or digital product to your customers with a very creative way.</div>
+                        <div class="home_btn">
+                            <a href="#" class="home_btn default-btn hvr-shutter-out-horizontal">Discover more &nbsp;<i class="icofont icofont-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- 02. /feature_area -->
+                <div class="col-md-6 home_col">
+                    <div class="home_img relative text-right">
+                        <img class="animated a_fr" data-delay=".5s" src="img/01.png" alt="">
 
-    <!-- 03. video_area -->
-    <div class="video_area" id="video">
-        <div class="video_control">
-            <div class="vdo_btn">
-                <a href="https://www.youtube.com/watch?v=WixYDPyHohI" class="fa fa-play" data-rel="prettyPhoto"></a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-7">
-                    <div class="vdo_dsc">
-                        <div class="h1 animated a_fu">No more complex thing for your product.</div>
-                        <p class="animated a_fu">Now for manners use has company believe parlors.  Least nor party who wrote while did. Excuse formed is agreed admire so on result parish. Put use set  uncommonly announcing and travelling. Allow sweetness direction to as necessary.</p>
+                        <!-- NB: if you area a wordpress developer, just remove this 2nd image. this image used for extra animation effect -->
+                        <img src="img/01.1.png" data-duration="1s" class="absolute r0 t0 animated a_fr" alt="">
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 03. /video_area -->
-
-    <!-- 04. product_area -->
-    <div class="product_area sp100" id="product">
-        <div class="container">
-            <div class="row left_dsc">
-                <div class="col-md-6 product_col">
-                    <div class="product_img relative">
-                        <img class=" animated a_fl" src="img/04.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 product_col">
-                    <div class="product_dsc animated a_fr">
-                        <div class="h1">Colorful designs with very beautiful shapes.</div>
-                        <p>Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed is agreed admire so on result parish. Put use set uncommonly announcing and travelling.</p>
-                        <a href="#" class="home_btn default-btn hvr-shutter-out-horizontal">Discover more &nbsp;<i class="icofont icofont-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row right_dsc">
-                <div class="col-md-6 product_col">
-                    <div class="product_img large_img animated a_fu">
-                        <img src="img/05.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 product_col">
-                    <div class="product_dsc animated a_fu">
-                        <div class="h1">Fastest in loading, perfect in design.</div>
-                        <p>Now for manners use has company believe parlors. Least nor party who wrote while did. Excuse formed is agreed admire so on result parish. Put use set uncommonly announcing and travelling.</p>
-                        <a href="#" class="home_btn default-btn hvr-shutter-out-horizontal">Discover more &nbsp;<i class="icofont icofont-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 04. /product_area -->
-
-    <div class="cta_and_testimonial" id="testimonial_2">
-        <!-- 05. cta_area -->
-        <div class="cta_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="cta text-center">
-                            <span class="animated a_fu">The best product for you!</span>
-                            <h1 class="animated a_fu" data-delay=".2s">Product in real from <br>your imagination!</h1>
-                            <div class="cta_btn animated a_fu" data-delay=".4s">
-                                <a href="#" class="default-btn hvr-shutter-out-horizontal">Download Trial Version &nbsp;<i class="icofont icofont-download"></i></a>
+                    <div class="round_animate_wrap">
+                        <div class="round_animate">
+                            <div class="shape_1">
+                                <span class="r_1"></span>
+                                <span class="r_2"></span>
+                                <span class="r_3"></span>
+                                <span class="r_4"></span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="scene">
-                <li class="layer" data-depth="0.20">
-                    <img src="img/shape/shape-2.png" alt="">
-                </li>
-                <li class="layer" data-depth="0.40">
-                    <img src="img/shape/shape-1.png" alt="">
-                </li>
-            </ul>
-        </div>
-        <!-- 05. /cta_area -->
-
-        <!-- 06. testimonial -->
-        <div class="brand_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="brand_slider">
-                            <div class="single_slide animated a_fu">
-                                <p>One of the best product for our daily life. Life is more easy and beautiful by  the touch of the One product.</p>
-                                <div class="c_logo">
-                                    <img src="img/06.jpg" alt="">
-                                </div>
+                            <div class="shape_2">
+                                <span class="r_1"></span>
+                                <span class="r_2"></span>
+                                <span class="r_3"></span>
+                                <span class="r_4"></span>
                             </div>
-                            <div class="single_slide animated a_fu" data-delay=".3s">
-                                <p>One of the best product for our daily life. Life is more easy and beautiful by  the touch of the One product.</p>
-                                <div class="c_logo">
-                                    <img src="img/07.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="single_slide animated a_fu" data-delay=".6s">
-                                <p>One of the best product for our daily life. Life is more easy and beautiful by  the touch of the One product.</p>
-                                <div class="c_logo">
-                                    <img src="img/08.jpg" alt="">
-                                </div>
+                            <div class="shape_3">
+                                <span class="r_1"></span>
+                                <span class="r_2"></span>
+                                <span class="r_3"></span>
+                                <span class="r_4"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 06. /testimonial -->
     </div>
+</div>
+<!-- 01. /hero_area -->
 
-    <!-- 07. service_area -->
-    <div class="service_area sp100" id="service">
-        <div class="container spt100">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section_title animated a_fu">
-                        <div class="h1">You’ll be happy to see <br>our awesome features.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row service">
-                <div class="col-md-4 col-sm-6 service_col animated a_fu">
-                    <div class="single_service">
-                        <div class="service_icon">
-                            <img src="img/icon/01.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3>Creative design</h3>
-                            <p>Months on ye at by esteem desire  warmth former. Sure that that way  gave any fond now. His boy mid.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 service_col animated a_fu">
-                    <div class="single_service">
-                        <div class="service_icon">
-                            <img src="img/icon/02.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3>Targeted UX</h3>
-                            <p>Months on ye at by esteem desire  warmth former. Sure that that way  gave any fond now. His boy mid.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 service_col animated a_fu">
-                    <div class="single_service">
-                        <div class="service_icon">
-                            <img src="img/icon/03.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3>Save the money</h3>
-                            <p>Months on ye at by esteem desire  warmth former. Sure that that way  gave any fond now. His boy mid.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 service_col animated a_fu">
-                    <div class="single_service">
-                        <div class="service_icon">
-                            <img src="img/icon/04.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3>Verified by experts</h3>
-                            <p>Months on ye at by esteem desire  warmth former. Sure that that way  gave any fond now. His boy mid.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 service_col animated a_fu">
-                    <div class="single_service">
-                        <div class="service_icon">
-                            <img src="img/icon/05.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3>Task making system</h3>
-                            <p>Months on ye at by esteem desire  warmth former. Sure that that way  gave any fond now. His boy mid.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 service_col animated a_fu">
-                    <div class="single_service">
-                        <div class="service_icon">
-                            <img src="img/icon/06.png" alt="">
-                        </div>
-                        <div class="service_content">
-                            <h3>Reminder system</h3>
-                            <p>Months on ye at by esteem desire  warmth former. Sure that that way  gave any fond now. His boy mid.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{> feature }}
+{{> video }}
+{{> product }}
+    
+<div class="cta_and_testimonial" id="testimonial_2">
+  {{> cta }}
+  {{> testimonial }}
+</div>
+{{> service }}
+{{> funfact }}
+{{> pricing }}
+{{> testimonial_area }}
+{{> faq }}
+{{> cta_2 }}
+
+<!-- Small modal -->
+
+<div class="modal get_touch fade bs-example-modal-sm" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content relative">
+      <a href="#" class="modal-close" data-toggle="modal" data-target=".bs-example-modal-sm">X</a>
+        <div class="modal_head">
+            <div class="h2">Get in touch</div>
+            <p>send us a message & we will be in touch</p>
         </div>
+        <form action="php/mail.php" id="ajax-contact" method="post">
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <input type="email" id="email" name="email" placeholder="Email address">
+            <textarea id="contactMsg" name="contactMsg" placeholder="Messege"></textarea>
+            <span class="contactSubmit">
+                <input type="submit" id="submit" name="submit" value="Send Now">
+            </span>
+            <div id="form-messages"></div>
+        </form>
     </div>
-    <!-- 07. /service_area -->
-
-    <!-- 08. funfact_area -->
-    <div class="funfact_area animated a_fu" id="fact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 counter_col clearfix">
-                    <div class="single_fact">
-                        <div class="h1"><span class="count">10</span>M+</div>
-                        <span>Download</span>
-                    </div>
-                    <div class="single_fact">
-                        <div class="h1"><span class="count">4</span>M+</div>
-                        <span>Active Users</span>
-                    </div>
-                    <div class="single_fact">
-                        <div class="h1"><span class="count">8910</span></div>
-                        <span>Line of codes</span>
-                    </div>
-                    <div class="single_fact">
-                        <div class="h1"><span class="count">20</span>k</div>
-                        <span>Solutions</span>
-                    </div>
-                </div>
-                <div class="col-md-4 counter_col clearfix">
-                    <div class="fun_content">
-                        <div class="h3">One is an awesome app</div>
-                        <p>Spot of come to ever hand as lady meet on. Delicate  contempt received two yet advanced. Gentleman as  belonging he commanded believing dejection in by.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 08. /funfact_area -->
-
-    <!-- 09. pricing_area -->
-    <div class="pricing_area sp100" id="price">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section_title">
-                        <div class="h1">Choose the product <br>that you really need!</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 price_col">
-                    <div class="single_price animated a_fu">
-                        <div class="price_head">
-                            <div class="h1">Free!</div>
-                            <p>For 30 Days!</p>
-                        </div>
-                        <div class="price_body">
-                            <ul>
-                                <li>10+ Free Themes</li>
-                                <li>Limited Disk Creator</li>
-                                <li>One User Support</li>
-                                <li>Money Transfer System</li>
-                                <li>Limited Support</li>
-                            </ul>
-                            <a href="#" class="default-btn hvr-shutter-out-horizontal">Buy Now</a>
-                            <span>* No credit card required</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 price_col">
-                    <div class="single_price active animated a_fu" data-delay=".3s">
-                        <div class="price_head">
-                            <div class="h1">$<span class="count">20</span></div>
-                            <p>For single user</p>
-                        </div>
-                        <div class="price_body">
-                            <ul>
-                                <li>100+ Free Themes</li>
-                                <li>Unlimited Disk Creator</li>
-                                <li>One User Support</li>
-                                <li>Money Transfer System</li>
-                                <li>Unlimited Support</li>
-                            </ul>
-                            <a href="#" class="default-btn hvr-shutter-out-horizontal">Buy Now</a>
-                            <span>* No hidden charge or auto-bill</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 price_col">
-                    <div class="single_price animated a_fu" data-delay=".6s">
-                        <div class="price_head">
-                            <div class="h1">$<span class="count">49</span></div>
-                            <p>For 2 - 10 user</p>
-                        </div>
-                        <div class="price_body">
-                            <ul>
-                                <li>500+ Free Themes</li>
-                                <li>Unlimited Disk Creator</li>
-                                <li>2 - 10 User Support</li>
-                                <li>Money Transfer System</li>
-                                <li>Unlimited Support</li>
-                            </ul>
-                            <a href="#" class="default-btn hvr-shutter-out-horizontal">Buy Now</a>
-                            <span>* No hidden charge or auto-bill</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 price_col">
-                    <div class="single_price animated a_fu" data-delay=".9s">
-                        <div class="price_head">
-                            <div class="h1">$<span class="count">49</span></div>
-                            <p>For unlimited user</p>
-                        </div>
-                        <div class="price_body">
-                            <ul>
-                                <li>Unlimited Free Themes</li>
-                                <li>Unlimited Disk Dreator</li>
-                                <li>Unlimited User Support</li>
-                                <li>Money Transfer System</li>
-                                <li>Unlimited Support</li>
-                            </ul>
-                            <a href="#" class="default-btn hvr-shutter-out-horizontal">Buy Now</a>
-                            <span>* No hidden charge or auto-bill</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pr_txt text-center">
-                        We don’t have any hidden charge or we don’t make auto-bill to our customers.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 09. /pricing_area -->
-
-    <!-- 10. testimonial_area -->
-    <div class="testimonial_area animated a_fu" id="testimonial">
-        <div class="container">
-            <div class="testimonial row">
-                <div class="single_tst col-md-4">
-                    <p>Not far stuff she think the jokes. Going as by do  known noise he wrote round leave. Warmly put branch people narrow see. Winding its waiting yet parlors married own feeling. Marry fruit do spite jokes an times. Whether at it unknown warrant herself winding if.</p>
-                    <div class="tst_author">
-                        <div class="tst_img">
-                            <img src="img/09.png" alt="">
-                        </div>
-                        <div class="cdtb">
-                            <h5>Hanson Jones</h5>
-                            <span class="cdt">Businessman, 35 years old</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="single_tst col-md-4">
-                    <p>Not far stuff she think the jokes. Going as by do  known noise he wrote round leave. Warmly put branch people narrow see. Winding its waiting yet parlors married own feeling. Marry fruit do spite jokes an times. Whether at it unknown warrant herself winding if.</p>
-                    <div class="tst_author">
-                        <div class="tst_img">
-                            <img src="img/10.png" alt="">
-                        </div>
-                        <div class="cdtb">
-                            <h5>Jennifer</h5>
-                            <span class="cdt">Student, 23 years old</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="single_tst col-md-4">
-                    <p>Not far stuff she think the jokes. Going as by do  known noise he wrote round leave. Warmly put branch people narrow see. Winding its waiting yet parlors married own feeling. Marry fruit do spite jokes an times. Whether at it unknown warrant herself winding if.</p>
-                    <div class="tst_author">
-                        <div class="tst_img">
-                            <img src="img/11.png" alt="">
-                        </div>
-                        <div class="cdtb">
-                            <h5>Martin Arham</h5>
-                            <span class="cdt">Job Holder, 28 years old</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="tst_btn spt100">
-                        <a href="#">See more tesimonials <i class="icofont icofont-rounded-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 10. /testimonial_area -->
-
-    <!-- 11. faq_area -->
-    <div class="faq_area spt100 animated a_fu" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 faq">
-                    <div class="faq_title">
-                        <p>Have a question in mind?</p>
-                        <div class="h1">Frequently Asked Questions</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="single_faq">
-                                <div class="h4">1. How can I install this?</div>
-                                <p>Had strictly mr handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant  conviction. As into ye then form. To easy five less if  rose were. Now set offended own out required.</p>
-                            </div>
-                            <div class="single_faq">
-                                <div class="h4">3. How can I manage my tasks?</div>
-                                <p>Had strictly mr handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant  conviction. As into ye then form. To easy five less if  rose were. Now set offended own out required.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="single_faq">
-                                <div class="h4">2. How can I pay for this?</div>
-                                <p>Had strictly mr handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant  conviction. As into ye then form. To easy five less if  rose were. Now set offended own out required.</p>
-                            </div>
-                            <div class="single_faq">
-                                <div class="h4">4. How to create a reminder?</div>
-                                <p>Had strictly mr handsome mistaken cheerful. We it so if resolution invitation remarkably unpleasant  conviction. As into ye then form. To easy five less if  rose were. Now set offended own out required.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="newsletter">
-                        <div class="h2">Subscribe to our <br>newsletter today!</div>
-                        <p>We send our new offers and app updates  to your inbox directly. Subscribe with your email today!</p>
-                        <form action="php/subscribe.php" method="post" id="subscribeforme" class="nw_form">
-                           <div class="input-group">
-                                <input type="email" name="email" placeholder="Enter your email address">
-                                <div class="input-group-addons">
-                                    <input type="submit" id="js-subscribe-btne" value="Subscribe now">
-                                </div>
-                            </div>
-                            <div id="js-subscribe-resulte" class="text-center confirmation_msg" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops! This email id is already in our list">
-                                <p>
-                                    &nbsp;
-                                </p>
-                            </div>
-                        </form>
-                        <span>We dont’t share any of your information to other and your information is totally secured.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="featured_clients animated a_fu">
-                        <div class="h4">we are featured on</div>
-                        <div class="featured_slider">
-                            <a href="#"><img src="img/17.jpg" alt=""></a>
-                            <a href="#"><img src="img/12.jpg" alt=""></a>
-                            <a href="#"><img src="img/13.jpg" alt=""></a>
-                            <a href="#"><img src="img/14.jpg" alt=""></a>
-                            <a href="#"><img src="img/15.jpg" alt=""></a>
-                            <a href="#"><img src="img/16.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 11. /faq_area -->
-
-    <!-- 12. cta_2 -->
-    <div class="cta_2 animated a_fu" id="cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="h1">One of the best product for the smart people.</div>
-                </div>
-                <div class="col-md-4">
-                    <div class="cta_btn">
-                        <a href="#" class="default-btn hvr-shutter-out-horizontal">Discover more &nbsp;<i class="icofont icofont-long-arrow-right"></i></a>
-
-                        <a href="https://www.youtube.com/watch?v=WixYDPyHohI" data-rel="prettyPhoto">Watch our video</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 12. /cta_2 -->
-
-
-
-    <!-- Small modal -->
-
-    <div class="modal get_touch fade bs-example-modal-sm" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content relative">
-          <a href="#" class="modal-close" data-toggle="modal" data-target=".bs-example-modal-sm">X</a>
-           <div class="modal_head">
-                <div class="h2">Get in touch</div>
-                <p>send us a message & we will be in touch</p>
-           </div>
-            <form action="php/mail.php" id="ajax-contact" method="post">
-                <input type="text" id="name" name="name" placeholder="Your name">
-                <input type="email" id="email" name="email" placeholder="Email address">
-                <textarea id="contactMsg" name="contactMsg" placeholder="Messege"></textarea>
-                <span class="contactSubmit">
-                    <input type="submit" id="submit" name="submit" value="Send Now">
-                </span>
-                <div id="form-messages"></div>
-            </form>
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
