@@ -1,19 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>{{title }}</title>
-  <link rel="stylesheet" href="/css/style.css">
-  {{#if ENV_DEVELOPMENT}}
-    <script src="http://localhost:35729/livereload.js"></script>
-  {{/if}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title }} - Ultimate FullStack Demo App</title>
+
+    {{#if ENV_DEVELOPMENT}}
+      <script src="http://localhost:35729/livereload.js"></script>
+    {{/if}}
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">	<!-- Bootstrap -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">	<!-- fontawesome -->
+    <link href="css/hover.min.css" rel="stylesheet">	<!-- hover -->
+    <link href="css/pretty.photo.css" rel="stylesheet">	<!-- prettyphoto -->
+    <link href="css/owl.carousel.css" rel="stylesheet">	<!-- owl -->
+    <link href="css/icofont.css" rel="stylesheet">	<!-- icofont -->
+    <link href="css/animate.css" rel="stylesheet">	<!-- animate -->
+    <!-- custom -->
+    <link rel="stylesheet" href="css/custom/style.css">
+    <link rel="stylesheet" href="css/custom/update_style.css">
+
+    <style class="styler_css">
+        /* don't delete this blank tag*/
+    </style>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>	<!-- jQuery -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
+<body class="home">
 
+<div class="loader_wrep">
+    <div class="loader_cell">
+        <div class="loader"></div>
+    </div>
+</div>
 
-  {{{body}}}
+<div class="box_mode content_wrapper">
 
+    {{{body}}}
 
-  </body>
+    <!-- 13. footer -->
+    <footer class="footer animated a_fu" id="footer">
+        <div class="footer_top sp100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="widget widget_txt">
+                            <div class="wid_title h4">About us</div>
+                            <p>We provide expert financial advice  to both individuals and businesses.  With over 20 years of experience we’ll ensure that you’re always getting the best guidance from the top people in the entire industry.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="widget widget_link">
+                            <div class="wid_title h4">Support Links</div>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">Payment Method</a></li>
+                                <li><a href="#">Support Center</a></li>
+                                <li><a href="#">Frequently Asked Question</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="widget widget_link">
+                            <div class="wid_title h4">Important Links</div>
+                            <ul>
+                                <li><a href="#">Envato</a></li>
+                                <li><a href="#">ThemeForest</a></li>
+                                <li><a href="#">GraphicRiver</a></li>
+                                <li><a href="#">3DOcean</a></li>
+                                <li><a href="#">AudioJuntle</a></li>
+                                <li><a href="#">CodeCanayon</a></li>
+                                <li><a href="#">Dhrubok</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="widget widget_contact">
+                            <div class="wid_title h4">Contact with us</div>
+                            <ul>
+                                <li><a href="tel:+444999555"><i class="fa fa-phone"></i>+444999555</a></li>
+                                <li><a href="mailto:support@one_demo.com"><i class="fa fa-envelope"></i>support@one_demo.com</a></li>
+                            </ul>
+                            <a href="#" class="btn hvr-shutter-out-horizontal" data-toggle="modal" data-target=".bs-example-modal-sm">Send us a Messege</a>
+                            <div class="footer_social">
+                               <span>Get in touch:</span>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-pinterest"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="foo_txt">
+                            <p>&copy; Copyright 2016 One, All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 text-right">
+                        <a href="#" class="top_scrl icofont"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 13. /footer -->
+</div>
+
+    <!-- (necessary JavaScript plugins) -->
+    <script src="js/bootstrap.min.js"></script>	<!-- Bootstrap -->
+    <script src="js/jquery.prettyphoto.min.js"></script>	<!-- prettyphoto -->
+    <script src="js/jquery.parallax.min.js"></script>	<!-- parallax -->
+    <script src="js/owl.carousel.min.js"></script>	<!-- owl -->
+    <script src="js/waypoints.min.js"></script>	<!-- waypoints -->
+    <script src="js/onepage.nav.js"></script>	<!-- one-page-nav -->
+    <script src="js/counterup.min.js"></script>	<!-- Counter up -->
+    <script src="js/colorpicker.js"></script>	<!-- colorpicker -->
+    <script src="js/styler.js"></script>	<!-- styler -->
+    <script src="js/jquery.slicknav.min.js"></script>	<!-- slicknav -->
+    <script src="js/ajax/mail.ajax.js"></script> <!-- mail form -->
+    <script src="js/validate.js"></script>	<!-- Validator -->
+    <script src="js/subscribe.js"></script>	<!-- ajax form -->
+    <script src="js/subscribee.js"></script>	<!-- ajax form -->
+    <script src="js/styler.js"></script>	<!-- stellar -->
+    <script src="js/active.js"></script>	<!-- active -->
+</body>
+
 </html>
