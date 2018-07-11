@@ -27,7 +27,7 @@ const config = {
       name: 'fullstask-demo-app'
     },
     port: process.env.PORT || 3000,
-    db: process.eng.DATABASE_URL || 'postgres://localhost/fullstask-demo-app-production'
+    db: process.env.DATABASE_URL || 'postgres://localhost/fullstask-demo-app-production'
   }
 };
 
