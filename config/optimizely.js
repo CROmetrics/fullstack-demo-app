@@ -14,7 +14,7 @@ function refresh() {
 
 refresh();
 
-setInterval(refresh, 60 * REFRESH_RATE);
+setInterval(refresh, REFRESH_RATE);
 
 module.exports = () => {
   return optimizelyClientInstance;
