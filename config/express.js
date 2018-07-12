@@ -42,6 +42,7 @@ module.exports = (app, config) => {
         maxAge: 900000,
         httpOnly: true
       });
+      req.cookies.userid = randomNumber;
       // console.log('cookie created successfully');
     } else {
       // yes, cookie was already present 
