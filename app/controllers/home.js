@@ -10,7 +10,9 @@ module.exports = (app) => {
 
 router.get('/', (req, res, next) => {
 
-  res.render('index', { /* options */ });
+  res.render('index', { 
+    title: 'MailChimp Demo'
+  });
 
 });
 
